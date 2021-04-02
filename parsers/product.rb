@@ -16,8 +16,8 @@ html = Nokogiri.HTML(content)
 	# content2 = URI.open(url).read
 	# html2 = Nokogiri.HTML(content2)
 price = html.css('#prcIsum').text
-price = html.css('[itemprop="price"]').text if price.strip == ''
-raise 'something happen!' if price.strip == ''
+# price = html.css('[itemprop="price"]').text if price.strip == ''
+# raise 'something happen!' if price.strip == ''
 
 outputs << {
 	# page_type: 'product',
