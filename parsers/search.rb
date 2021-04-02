@@ -12,15 +12,10 @@ products = html.css('.srp-results .s-item')
 products.each do |product|
 	name = product.css('.s-item__title').text
 	url = product.css('.s-item__link').attr('href').text
-
-	# content2 = URI.open(url).read
-	# html2 = Nokogiri.HTML(content2)
-	# price = html2.css('#prcIsum').text
+	effective_url = url
 
 	pages << {
-		# name: name,
 		url: url,
-		# price: price
 		page_type: 'product',
 		vars: {
 			'name' => name

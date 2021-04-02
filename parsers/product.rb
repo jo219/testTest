@@ -15,15 +15,13 @@ html = Nokogiri.HTML(content)
 
 	# content2 = URI.open(url).read
 	# html2 = Nokogiri.HTML(content2)
-price = html.css('#prcIsum').text
-# price = html.css('[itemprop="price"]').text if price.strip == ''
-# raise 'something happen!' if price.strip == ''
+# puts html.css('#prcIsum').text
+puts html.css('[itemprop="price"]').text
+
+price = html.css('[itemprop="price"]').text
+raise 'something 2 happen!' + price if price.strip == ''
 
 outputs << {
-	# page_type: 'product',
-	# vars: {
-	# 	'name' => name
-	# }
 	_collection: "products",
 	name: page['vars']['name'],
 	url: page['url'],
