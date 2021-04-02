@@ -17,7 +17,7 @@ products.each do |product|
 	# html2 = Nokogiri.HTML(content2)
 	# price = html2.css('#prcIsum').text
 
-	outputs << {
+	pages << {
 		# name: name,
 		url: url,
 		# price: price
