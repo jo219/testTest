@@ -24,6 +24,7 @@ outputs << {
 	# vars: {
 	# 	'name' => name
 	# }
+	_collection: "products",
 	name: page['vars']['name'],
 	url: page['url'],
 	price: price
