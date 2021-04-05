@@ -11,8 +11,8 @@ parsers:
     page_type: product
     disabled: true
 
-exporters:
-  - exporter_name: products
-    exporter_type: json
-    collection: products
-    write_mode: pretty_array
+# exporters:
+#   - exporter_name: products
+#     exporter_type: json
+#     collection: products
+#     write_mode: pretty_array
