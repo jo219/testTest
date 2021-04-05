@@ -13,6 +13,6 @@ parsers:
 
 exporters:
   - exporter_name: products
-    exporters_type: json
+    exporter_type: json
     collection: products
     write_mode: pretty_array
