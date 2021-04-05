@@ -12,7 +12,6 @@ products = html.css('.srp-results .s-item')
 products.each do |product|
 	name = product.css('.s-item__title').text
 	url = product.css('.s-item__link').attr('href').text
-	effective_url = url
 
 	pages << {
 		url: url,

@@ -1,6 +1,6 @@
 seeder:
  file: ./seeder/seeder.rb
- disabled: false
+ disabled: true
 
 parsers:
   - file: ./parsers/search.rb

@@ -3,7 +3,9 @@
 # require 'json'
 
 # content = URI.open('https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=quite+comfort+20&_sacat=0&LH_TitleDesc=0&_odkw=quiet+comfort&_osacat=0').read
+puts 'test satu'
 html = Nokogiri.HTML(content)
+puts content
 
 # products = html.css('.srp-results .s-item')
 
