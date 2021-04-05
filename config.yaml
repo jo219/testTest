@@ -5,11 +5,11 @@ seeder:
 parsers:
   - file: ./parsers/search.rb
     page_type: search
-    disabled: false
+    disabled: true
 
   - file: ./parsers/product.rb
     page_type: product
-    disabled: false
+    disabled: true
 
 exporters:
   - exporter_name: products
